@@ -4,6 +4,7 @@ var path =require('path');
 
 var expresslayout = require('express-ejs-layouts');
 var indexRouter = require('./routes/index');
+var islamicRouter = require('./routes/islamic');
 var registrationRouter = require('./routes/registration');
 
 
@@ -16,6 +17,7 @@ app.set(express.urlencoded({extended:false}));
 app.set(express.join);
 app.use(expresslayout)
 app.use('/',indexRouter)
+app.use('/islamic',islamicRouter)
 app.use('/registration',registrationRouter);
 app.listen(3000);
 module.express= app;
