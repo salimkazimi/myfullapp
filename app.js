@@ -20,5 +20,5 @@ app.use('/',indexRouter)
 app.use('/islamic',islamicRouter)
 app.use('/registration',registrationRouter);
 app.listen(3000);
-module.express= app;
+module.exports = app;
 
